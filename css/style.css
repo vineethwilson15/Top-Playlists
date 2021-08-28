@@ -1,0 +1,123 @@
+@import url('//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+} 
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 29px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.top .top-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family: 'Circular Spotify Tx T Bold',sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    font-family: 'Circular Spotify Tx T Bold',sans-serif;
+    color: #1DB954;
+    padding: 0 5px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.top{
+    color: #fff;
+    background-color: #111;
+    min-height: 100vh;
+}
+
+.top .title::after{
+    content: "Spotify";
+}
+.top .top-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+.top .top-content .card:hover{
+    background: crimson;
+}
+.top .top-content .card .box{
+    transition: all 0.3s ease;
+}
+.top .top-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+iframe{
+    margin-top: 11px;
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+    .max-width{
+        max-width: 930px;
+    }
+    .top .top-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .top .top-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+    .top{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+
+ 
